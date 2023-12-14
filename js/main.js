@@ -1,48 +1,100 @@
-//El proyecto trata de un juego en donde se presentan operaciones matemáticas al usuario y al responder correctamente, suma un puntaje (siendo el límite 10) y a su vez subiendo al dificualtad. Al llegar al límite ganará pero si falla, se termina el juego y se indicará con un mensaje su puntaje. También se puede poner una variable en donde se guarde el record para que intente superarlo.
+//El simulador consiste en un sistema para cargar notas y promediarlas a alumnos.
 
-let respuesta;
-let puntaje;
-let intentar;
-let dificultad = 25;
+const alumnos = [];
 
-function generarNumero() {
-    let numUno = Math.ceil(Math.random()*dificultad);
-    let numDos = Math.ceil(Math.random()*dificultad);
-    let res = numUno + numDos;
-    console.log("La operación a realizar es: " + numUno + "+" + numDos);
-    return res;
+function MostrarLista(){
+    if(alumnos.length == 0){
+        console.log("===================")
+        console.log("La lista de alumnos está vacía.");
+    }else{
+        console.log("===================")
+        alumnos.forEach( (alumno) => {
+            if(alumno.nota1 != undefined && alumno.nota2 != undefined){
+                console.table(alumno);
+            }else{
+                console.log(alumno.nombre + ", notas no cargadas." + "\n");
+            }
+        });
+    }
+    console.log("===================")
 }
 
-console.log("----------------------=°=----------------------");
-console.log("La temática es fácil, deberás responder correctamente a las operaciones matemáticas. Si acertás sumas un punto y si fallás perdés.");
-respuesta = 1;
-res = respuesta;
-puntaje = 0;
-do{
-    if(res == respuesta){
-        console.log("////////////////////////////////////////////////");
-        res = generarNumero();
-        respuesta = Number(prompt("Ingrese el resultado de la operación."));
-        if(res == respuesta){
-            console.log("+1 punto");
-            puntaje += 1;
-            dificultad +=25;
-        }
-    }else{
-        if(puntaje < 1){
-            puntaje = 0;
-        }
-        respuesta = 1;
-        res = 1;
-        console.log("////////////////////////////////////////////////");
-        console.log("Fallaste. Tu puntaje es de " + puntaje + " puntos.");
-        console.log("Si deseas reintentar, escribí la letra Y, si deseas terminar el juego escribí la letra N");
-        intentar = prompt("¿Cuál es tu elección?").toUpperCase();
-        puntaje = 0;
-        dificultad = 25;
+function AgregarAlumno(){
+    const datos = {
+        nombre: prompt("Ingrese nombre y apellido del alumno."),
+        nota1: undefined,
+        nota2: undefined,
+        promedio: undefined
     }
-}while(intentar != "N");
+    alumnos.push(datos);
+    console.log("===================")
+    console.log("Alumno " + datos.nombre + " incorporado con exito a la lista.");
+    console.log("===================")
+}
 
-console.log("¡Gracias por jugar!");
-console.log("----------------------=°=----------------------");
+function EliminarAlumno(){
+    const alumno = prompt("Ingrese el nombre del alumno que se deasea eliminar de la lista.");
+    console.log("===================")
+    const existe = alumnos.some( (a) => a.nombre === alumno);
+    if(existe == true){
+        const index = alumnos.findIndex( (i) => i.nombre == alumno);
+        alumnos.splice(index, 1);
+        console.log("El alumno " + alumno + " fue eliminado de la lista.")
+        console.log("===================")
+    }else{
+        console.log("El alumno " + alumno + " no existe en la lista.")
+        console.log("===================")
+    }
+}
 
+function CargarNotas(){
+    const alumno = prompt("Ingrese el nombre del alumno que se deasea cargar notas.");
+    const existe = alumnos.some( (a) => a.nombre === alumno);
+    if(existe == true){
+        const index = alumnos.findIndex( (i) => i.nombre == alumno);
+        alumnos[index].nota1 = Number(prompt("Ingrese la primer nota."));
+        alumnos[index].nota2 = Number(prompt("Ingrese la segunda nota."));
+
+        const promedio = CalcularPromedio(alumnos[index].nota1, alumnos[index].nota2);
+
+        alumnos[index].promedio = promedio;
+        console.log("===================")
+        console.log("Notas cargadas con éxito...");
+        console.log("===================")
+    }
+}
+
+function CalcularPromedio(a, b){
+    return ((a + b) / 2);
+}
+
+let cancelar = 0
+while(cancelar == 0){
+    
+    const respuesta = prompt("Ingrese un número de acuerdo a las opciones que quiera realizar.");
+    switch (respuesta) {
+        case "1":
+            MostrarLista();
+            break;
+    
+        case "2":
+            AgregarAlumno();
+            break;
+        
+        case "3":
+            MostrarLista();
+            CargarNotas();
+            break;
+    
+        case "4":
+            EliminarAlumno();
+            break;
+    
+        default:
+            console.log("===================")
+            console.log("Saliendo del simulador...");
+            console.log("===================")
+            cancelar = 1;
+            break;
+    }
+}
