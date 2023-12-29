@@ -1,0 +1,14 @@
+header{
+    border-bottom: 1px solid black;
+}
+
+.tarjeta{
+    /* height: 150px; */
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.carrito{
+    height: 100vh;
+    border-left: 2px solid black;
+}
