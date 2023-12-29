@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 header{
     border-bottom: 1px solid black;
 }
@@ -11,4 +16,21 @@ header{
 .carrito{
     height: 100vh;
     border-left: 2px solid black;
+}
+
+th{
+    border: 1px solid black;
+}
+
+th, td{
+    padding: 2px;
+}
+td img{
+    width: 75px;
+}
+
+.borrar-producto{
+    text-decoration: none;
+    color: red;
+    font-weight: 700;
 }

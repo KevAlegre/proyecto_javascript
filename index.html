@@ -7,6 +7,7 @@
         ">
         <link rel="stylesheet" href="./css/style.css">
         <title>Proyecto</title>
+        <script src="./js/main.js" defer></script>
     </head>
     <body>
         <header>
@@ -17,7 +18,7 @@
         </header>
         <main>
             <section class="row">
-                <div class="col-9">
+                <div class="col-8" id="lista-productos">
                     <div class="row m-4 tarjeta">
                         <div class="col-2">
                             <img class="w-100" src="./assets/Fender Player Stratocaster.jpg">
@@ -25,9 +26,9 @@
                         <div class="col-10">
                             <h4 class="mt-2">Fender Player Stratocaster</h4>
                             <p class="m-0">Categoría: <span>Guitarras</span></p>
-                            <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus blanditiis ullam consequatur unde iusto, culpa dolores nisi eos pariatur cum! Repudiandae magnam dicta illo facilis.</p>
-                            <p class="m-0">Precio:</p>
-                            <button class="mb-2">Agregar al carrito</button>
+                            <p class="m-0">La Fender Player Stratocaster combina estilo clásico con versatilidad moderna. Con cuerpo de aliso, mástil de arce y tres pastillas Player Series, ofrece tonos potentes y expresivos.</p>
+                            <p class="m-0">Precio: <span class="precio">749</span> U$D</p>
+                            <button class="mb-2 agregar-carrito" data-id="1">Agregar al carrito</button>
                         </div>              
                     </div>
                     <div class="row m-4 tarjeta">
@@ -37,9 +38,9 @@
                         <div class="col-10">
                             <h4 class="mt-2">Gibson Les Paul</h4>
                             <p class="m-0">Categoría: <span>Guitarras</span></p>
-                            <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus blanditiis ullam consequatur unde iusto, culpa dolores nisi eos pariatur cum! Repudiandae magnam dicta illo facilis.</p>
-                            <p class="m-0">Precio:</p>
-                            <button class="mb-2">Agregar al carrito</button>
+                            <p class="m-0">La Gibson Les Paul, ícono atemporal, fusiona elegancia y potencia. Construida con cuerpo de caoba, tapa de arce y pastillas humbucker, brinda tonos ricos y distintivos.</p>
+                            <p class="m-0">Precio: <span class="precio">2290</span> U$D</p>
+                            <button class="mb-2 agregar-carrito" data-id="2">Agregar al carrito</button>
                         </div>              
                     </div>
                     <div class="row m-4 tarjeta">
@@ -49,9 +50,9 @@
                         <div class="col-10">
                             <h4 class="mt-2">Kawai GL10</h4>
                             <p class="m-0">Categoría: <span>Pianos</span></p>
-                            <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus blanditiis ullam consequatur unde iusto, culpa dolores nisi eos pariatur cum! Repudiandae magnam dicta illo facilis.</p>
-                            <p class="m-0">Precio:</p>
-                            <button class="mb-2">Agregar al carrito</button>
+                            <p class="m-0">El piano Kawai GL-10 representa la excelencia artesanal japonesa. Con su sonido cálido y equilibrado, teclas sensibles y diseño elegante, ofrece una experiencia musical incomparable.</p>
+                            <p class="m-0">Precio: <span class="precio">12558</span> U$D</p>
+                            <button class="mb-2 agregar-carrito" data-id="3">Agregar al carrito</button>
                         </div>              
                     </div>
                     <div class="row m-4 tarjeta">
@@ -61,9 +62,9 @@
                         <div class="col-10">
                             <h4 class="mt-2">Marshall Mg15R</h4>
                             <p class="m-0">Categoría: <span>Amplificadores</span></p>
-                            <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus blanditiis ullam consequatur unde iusto, culpa dolores nisi eos pariatur cum! Repudiandae magnam dicta illo facilis.</p>
-                            <p class="m-0">Precio:</p>
-                            <button class="mb-2">Agregar al carrito</button>
+                            <p class="m-0">El amplificador Marshall MG15R brinda potencia y versatilidad en un diseño compacto. Con sonido dinámico, efectos integrados y construcción robusta, ofrece una experiencia sonora excepcional para guitarristas.</p>
+                            <p class="m-0">Precio: <span class="precio">179</span> U$D</p>
+                            <button class="mb-2 agregar-carrito" data-id=4">Agregar al carrito</button>
                         </div>              
                     </div>
                     <div class="row m-4 tarjeta">
@@ -73,9 +74,9 @@
                         <div class="col-10">
                             <h4 class="mt-2">Parquer 5 Cuerpos Kit</h4>
                             <p class="m-0">Categoría: <span>Percusión</span></p>
-                            <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus blanditiis ullam consequatur unde iusto, culpa dolores nisi eos pariatur cum! Repudiandae magnam dicta illo facilis.</p>
-                            <p class="m-0">Precio:</p>
-                            <button class="mb-2">Agregar al carrito</button>
+                            <p class="m-0">La batería Parquer de 5 cuerpos es una elección sólida para bateristas. Con cascos de calidad, configuración versátil y durabilidad, ofrece un sonido potente y una experiencia musical enérgica.</p>
+                            <p class="m-0">Precio: <span class="precio">1459</span> U$D</p>
+                            <button class="mb-2 agregar-carrito" data-id="5">Agregar al carrito</button>
                         </div>              
                     </div>
                     <div class="row m-4 tarjeta">
@@ -85,9 +86,9 @@
                         <div class="col-10">
                             <h4 class="mt-2">Parquer Tenor</h4>
                             <p class="m-0">Categoría: <span>Saxofones</span></p>
-                            <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus blanditiis ullam consequatur unde iusto, culpa dolores nisi eos pariatur cum! Repudiandae magnam dicta illo facilis.</p>
-                            <p class="m-0">Precio:</p>
-                            <button class="mb-2">Agregar al carrito</button>
+                            <p class="m-0">El saxofón tenor de Parquer combina artesanía y calidad sonora. Con acabado elegante, llaves precisas y tono cálido, es la elección perfecta para músicos exigentes y apasionados.</p>
+                            <p class="m-0">Precio: <span class="precio">1099</span> U$D</p>
+                            <button class="mb-2 agregar-carrito" data-id="6">Agregar al carrito</button>
                         </div>              
                     </div>
                     <div class="row m-4 tarjeta">
@@ -97,9 +98,9 @@
                         <div class="col-10">
                             <h4 class="mt-2">SX SPB-57</h4>
                             <p class="m-0">Categoría: <span>Bajos</span></p>
-                            <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus blanditiis ullam consequatur unde iusto, culpa dolores nisi eos pariatur cum! Repudiandae magnam dicta illo facilis.</p>
-                            <p class="m-0">Precio:</p>
-                            <button class="mb-2">Agregar al carrito</button>
+                            <p class="m-0">El bajo SX SPB-57 ofrece un sonido potente y versátil. Con cuerpo sólido, pastillas vintage y construcción robusta, proporciona tonos ricos y un rendimiento excepcional para bajistas.</p>
+                            <p class="m-0">Precio: <span class="precio">409</span> U$D</p>
+                            <button class="mb-2 agregar-carrito" data-id="7">Agregar al carrito</button>
                         </div>              
                     </div>
                     <div class="row m-4 tarjeta">
@@ -109,14 +110,30 @@
                         <div class="col-10">
                             <h4 class="mt-2">Yamaha P-125B</h4>
                             <p class="m-0">Categoría: <span>Pianos</span></p>
-                            <p class="m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus blanditiis ullam consequatur unde iusto, culpa dolores nisi eos pariatur cum! Repudiandae magnam dicta illo facilis.</p>
-                            <p class="m-0">Precio:</p>
-                            <button class="mb-2">Agregar al carrito</button>
+                            <p class="m-0">El piano Yamaha P-125B combina elegancia y rendimiento. Con teclas contrapesadas, sonidos de piano auténticos y funciones avanzadas, ofrece una experiencia musical cautivadora para pianistas de todos los niveles.</p>
+                            <p class="m-0">Precio: <span class="precio">1199</span> U$D</p>
+                            <button class="mb-2 agregar-carrito" data-id="8">Agregar al carrito</button>
                         </div>              
                     </div>
                 </div>
-                <div class="col-3 carrito">
+                <div class="col-4 carrito">
                     <h3 class="text-center">MI CARRITO</h3>
+                    <div id="cart">
+                        <table class="w-100" id="lista-carrito">
+                            <thead>
+                                <tr>
+                                    <th>Imagen</th>
+                                    <th>Producto</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>              
+                        </table>
+                    </div>
+                    <div>
+                        <button class="w-100 mt-2" id="vaciar-carrito">Vaciar carrito</button>
+                    </div>
                 </div>
             </section>
         </main>
