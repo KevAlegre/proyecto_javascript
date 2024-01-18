@@ -1,36 +1,84 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-header{
-    border-bottom: 1px solid black;
+
+body {
+    background-color: rgb(66, 173, 116);
 }
 
-.tarjeta{
-    /* height: 150px; */
+header {
+    display: flex;
     border: 1px solid black;
+    height: 50px;
+}
+
+.contenedorLetras { 
+    background-color: brown;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+table {
+    background-color: aliceblue;
+}
+
+.letraPantalla {
+    background-color: chocolate;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 100px;
+    background-color: chartreuse;
     border-radius: 20px;
+    width: 110px;
+    text-align: center;
 }
 
-.carrito{
-    height: 100vh;
-    border-left: 2px solid black;
-}
-
-th{
+.definicionPantalla {
+    background-color: gold;
     border: 1px solid black;
+    border-radius: 15px;
+    width: 75%;
+    height: 200px;
+    margin: auto;
 }
 
-th, td{
-    padding: 2px;
-}
-td img{
-    width: 75px;
+h3 {
+    background-color: darkcyan;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+
 }
 
-.borrar-producto{
-    text-decoration: none;
-    color: red;
-    font-weight: 700;
+.botonPasapalabra { 
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#btn-pasapalabra {
+    font-size: 45px;
+    border-radius: 15px;
+}
+
+.ingresarPalabra {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#palabra {
+    font-size: 35px;
 }
