@@ -4,11 +4,13 @@
     box-sizing: border-box;
 }
 header{
+    background-color: rgb(255, 255, 255);
     border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
 }
 
 .tarjeta{
-    /* height: 150px; */
     border: 1px solid black;
     border-radius: 20px;
 }
@@ -16,6 +18,8 @@ header{
 .carrito{
     height: 100vh;
     border-left: 2px solid black;
+    position: fixed;
+    left: 67%;
 }
 
 th{
@@ -29,8 +33,24 @@ td img{
     width: 75px;
 }
 
+
+
+tbody {
+    height: 580px;
+}
+
+tbody tr {
+    height: 70px;
+    /* background-color: aqua; */
+}
+
 .borrar-producto{
     text-decoration: none;
     color: red;
     font-weight: 700;
+}
+
+.contBotones {
+    display: flex;
+    justify-content: space-evenly;
 }

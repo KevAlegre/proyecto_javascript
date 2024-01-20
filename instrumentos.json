@@ -1,0 +1,125 @@
+{
+    "instrumentos": [
+      {
+        "id": "1",
+        "instrumento": "Fender Stratocaster",
+        "categoria": "Guitarra",
+        "precio": 1200,
+        "descripcion": "La Fender Stratocaster, un ícono en guitarras eléctricas, ofrece versatilidad tonal y comodidad en un diseño clásico.",
+        "imagen": "https://audioimport.com.ar/wp-content/uploads/2021/02/fender-player-stratocaster-hss-mn-3-color-sunburst_5d810423749c9.jpg"
+      },
+      {
+        "id": "2",
+        "instrumento": "Ibanez RG550",
+        "categoria": "Guitarra",
+        "precio": 1000,
+        "descripcion": "La Ibanez RG550, ideal para guitarristas de rock y metal, ofrece potencia y velocidad con un estilo distintivo.",
+        "imagen": "https://static.sonovente.com/img/library/zoom/60/450/60369_1.jpg"
+      },
+      {
+        "id": "3",
+        "instrumento": "Fender Jazz Bass",
+        "categoria": "Bajo",
+        "precio": 1100,
+        "descripcion": "El Fender Jazz Bass, conocido por su versatilidad, proporciona graves potentes y tonos ricos para diversos estilos musicales.",
+        "imagen": "https://themusicoutlet.ie/wp-content/uploads/2018/10/bb1-4.jpg"
+      },
+      {
+        "id": "4",
+        "instrumento": "DW Collector's Series",
+        "categoria": "Batería",
+        "precio": 4000,
+        "descripcion": "La DW Collector's Series, con cascos de arce y hardware premium, ofrece una experiencia de batería excepcional para músicos exigentes.",
+        "imagen": "https://listaimsa.com.ar/wp-content/uploads/2023/07/DW-Collectors-Cherry-Gum-4-c-Silver-Abalone.jpg"
+      },
+      {
+        "id": "5",
+        "instrumento": "Yamaha YTS-62",
+        "categoria": "Saxofón",
+        "precio": 2200,
+        "descripcion": "El Yamaha YTS-62, saxofón tenor profesional, brinda un tono cálido y versátil, perfecto para músicos exigentes en jazz y más.",
+        "imagen": "./assets/Parquer Tenor.jpg"
+      },
+      {
+        "id": "6",
+        "instrumento": "Selmer Mark VI",
+        "categoria": "Saxofón",
+        "precio": 5000,
+        "descripcion": "El Selmer Mark VI, saxofón alto legendario, destaca por su calidad tonal excepcional y su artesanía insuperable en el mundo del jazz.",
+        "imagen": "https://www.tomleemusic.ca/media/catalog/product/cache/7b59eeedc8a9391b10c489498e31e772/7/2/72.png"
+      },
+      {
+        "id": "7",
+        "instrumento": "Roland FP-30",
+        "categoria": "Piano",
+        "precio": 700,
+        "descripcion": "El Roland FP-30, piano digital portátil, ofrece autenticidad de sonido de piano de cola en un diseño compacto para músicos en movimiento.",
+        "imagen": "https://www.manual.ar/thumbs/products/l/1450337-roland-fp-30x.jpg"
+      },
+      {
+        "id": "8",
+        "instrumento": "Korg Kronos 88",
+        "categoria": "Teclado",
+        "precio": 3500,
+        "descripcion": "El Korg Kronos 88, una workstation potente con teclas contrapesadas, es esencial para productores y músicos que buscan calidad y versatilidad.",
+        "imagen": "https://www.b2bmusicstore.com.ar/wp-content/uploads/korg-kronos-2-88-2.jpg"
+      },
+      {
+        "id": "9",
+        "instrumento": "Yamaha P-125",
+        "categoria": "Teclado",
+        "precio": 600,
+        "descripcion": "El Yamaha P-125, teclado digital portátil, ofrece sonidos auténticos y una acción de teclas de piano, ideal para músicos en desarrollo.",
+        "imagen": "https://www.heavenimagenes.com/heavencommerce/0c5cacb8-dfbd-471a-ac7e-5c09a26f6da9/images/v2/YAMAHA/8047_medium.jpg"
+      },
+      {
+        "id": "10",
+        "instrumento": "Marshall JCM800",
+        "categoria": "Amplificador",
+        "precio": 1500,
+        "descripcion": "El amplificador Marshall JCM800, venerado por su potencia y tono, es esencial para guitarristas que buscan un sonido icónico y definido.",
+        "imagen": "https://www.heavenimagenes.com/heavencommerce/442fba24-f11b-4699-8986-ef30a182c02c/images/v2/MARSHALL/1710251716235006_11_medium.jpg"
+      },
+      {
+        "id": "11",
+        "instrumento": "Fender Bassman",
+        "categoria": "Amplificador",
+        "precio": 1200,
+        "descripcion": "El Fender Bassman, clásico amplificador para bajos, proporciona tonos cálidos y vintage que han definido el sonido del bajo eléctrico.",
+        "imagen": "https://www.long-mcquade.com/files/610/2171000010_xl.jpg"
+      },
+      {
+        "id": "12",
+        "instrumento": "Roland JC-120",
+        "categoria": "Amplificador",
+        "precio": 800,
+        "descripcion": "El Roland JC-120, conocido por su limpieza y sonido estéreo distintivo, es una elección popular entre guitarristas para una reproducción fiel del sonido.",
+        "imagen": "https://acdn.mitiendanube.com/stores/001/312/585/products/roland391-1a7d066a587f48ca4616359842476978-1024-1024.jpg"
+      },
+      {
+        "id": "13",
+        "instrumento": "Gibson Les Paul Standard",
+        "categoria": "Guitarra",
+        "precio": 2500,
+        "descripcion": "La Gibson Les Paul Standard, icónica por su tono poderoso, artesanía superior y diseño clásico, es una elección preferida entre guitarristas de todos los estilos.",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_894367-MLA69429285313_052023-O.webp"
+      },
+      {
+        "id": "14",
+        "instrumento": "Pearl Masterworks",
+        "categoria": "Batería",
+        "precio": 4500,
+        "descripcion": "La Pearl Masterworks, con cascos personalizados y acabados impresionantes, es una batería de alta gama diseñada para músicos que buscan calidad excepcional.",
+        "imagen": "https://d1aeri3ty3izns.cloudfront.net/media/57/577485/600/preview.jpg"
+      },
+      {
+        "id": "15",
+        "instrumento": "Yamaha CP88",
+        "categoria": "Teclado",
+        "precio": 2500,
+        "descripcion": "El Yamaha CP88, un piano de escenario premium con teclas contrapesadas y sonidos auténticos, proporciona una experiencia excepcional para músicos en vivo.",
+        "imagen": "https://www.cjfsonidoprofesional.com/images/slide-1634835966.jpg"
+      }
+    ]
+  }
+  
