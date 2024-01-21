@@ -22,6 +22,11 @@ header{
     left: 67%;
 }
 
+#cart {
+    height: 610px;
+    overflow: auto;
+}
+
 th{
     border: 1px solid black;
 }
@@ -33,15 +38,8 @@ td img{
     width: 75px;
 }
 
-
-
-tbody {
-    height: 580px;
-}
-
-tbody tr {
-    height: 70px;
-    /* background-color: aqua; */
+tbody, tbody tr {
+    height: 115px;
 }
 
 .borrar-producto{

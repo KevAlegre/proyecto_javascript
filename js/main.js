@@ -5,15 +5,42 @@ const contenidoCarrito = document.querySelector("tbody");
 const listaProductos = document.querySelector("#lista-productos");
 const vaciarCarrito = document.querySelector("#vaciar-carrito");
 const carrito = document.querySelector("#cart");
+const comprar = document.querySelector("#btn-comprar");
+
+    //===LIBRERÍA===
+//Usé la librería de Toastify
+comprar.addEventListener("click", () => {
+    if(articulosCarrito.length === 0) {
+        Toastify({
+            text: "Porfavor, agregue productos al carrito para continuar.",
+            position: "center",
+            style: {
+                background: "linear-gradient(to right, #00b09b, #96c93d)",
+            }
+        }).showToast();
+    } else {
+        Toastify({
+            text: "¡Compra realizada con éxito!",
+            position: "center",
+            style: {
+                background: "linear-gradient(to right, #00b09b, #96c93d)",
+            }
+        }).showToast();
+    }
+});
 
     //===FETCH===
 fetch("instrumentos.json")
     .then((res) => res.json())
     .then((cont) => render(cont))
-    .catch((err) => console.log("Error en el fetch:", err));
+    .catch(() => {
+        Toastify({
+            name: "Ha ocurrido un error con el Fetch",
+            gravity: "bottom"
+        }).showToast();
+    });
 
     //===FUNCIONES===
-
 //Mostrar los productos
 function render( {instrumentos} ) {
     for(item of instrumentos) {
@@ -83,7 +110,7 @@ function mostrarEnCarrito(){
         row.innerHTML = `
             <td><img src="${prod.imagen}"></td>
             <td>${prod.producto}</td>
-            <td>${prod.precio}</td>
+            <td class"precioProd">${prod.precio}</td>
             <td class="cantidad">${prod.cantidad}</td>
             <td><a href="#" class="borrar-producto" data-id="${prod.id}">X</a></td>
         `;
